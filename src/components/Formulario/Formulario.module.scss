@@ -1,0 +1,69 @@
+.novaTarefa {
+	display: flex;
+	flex-direction: column;
+	grid-area: nova-tarefa;
+	background-color: rgb(68, 71,90);
+	border-radius: 10px;
+	box-shadow: 2px 4px 4px #0000009F;
+	padding: 12px;
+	min-height: 200px;
+
+	.inputContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 16px;
+
+	label {
+		margin-bottom: 8px;
+		font-size: 1.25rem;
+	}
+
+	input {
+		width: 100%;
+		padding: 8px 12px 4px;
+		box-sizing: border-box;
+		border: unset;
+		border-radius: 5px;
+		background-color: rgb(48,51,70);
+		border: none;
+	
+	&::placeholder {
+		color: rgb(98,117,164)	
+		}
+	}
+	input::-webkit-calendar-picker-indicator{
+		width: 24px;
+		height: 24px;
+		background:  center url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgEAQAAACJ4248AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAGAAAABgAPBrQs8AAAAHdElNRQfmBg4TNjdMl/n/AAADPklEQVRYw8VXTUtyURCecw0i0rSWfQkWWYFYYbukWkW09g9kEa1rH7QpiiKzj0XQXygp7Ae4F1pVkpGWtVOh0CI8z7s41Lk3r3mv+b7vgHCPZ87MM8+cOzOX6D8LM6MMMEbw+Yj5/UQuF1FbGxFAlM0SJZNEsRhRPM4YUFeU4E4nEA4Dj4+oKuk0EAqBd3X93jEcDvCtLeDtrbrj71Isgm9sgNvtNTrv7wcSCa3RVArY3QWfmgLcbqC5WfzcbvFfOCwYUMv1NXhfn0nnk5NAPi+NPDwAs7OAxVL9rMUCBIPadGWzwPi4icjVzk9OwK1Wfd2hIXCvV3eP22xAJKIBUY0JwOHQ0r6zAyiKvgOvFyiVgFKpIggoChAKfZnjV1fgLS2VAfDtbU3kFZwL3UBAGg4EKgelKFom1tYqGHQ65W1/eKhEu1kAMh2ZjFAuFMA7Oz/3ZIRseZmosVEsVlaY8vpKdRKmvLwQVlbEqqmJ2NLSN5oYk7c2lTJ0200wIHxYLOJtAoD7e4AxyQBGR4k6OoTq6SljpVK9ov9igZVKRJGIWDmdRENDEgAbG5OqFxf1di4lGpWU+P0SAPX0yI27u78HIJmUlPT2qgA4HFLp6cm0XWaw1CKTkYvWVhWA93fz0SQSRJyL59VVIBisfqa8rijlUbe3Gwpaubwkmp8XIBSF6OgIWFz8+ZDadj6vAvD8LJVcLqMcMHZ8LEEwRrS//zMI1V2j29uvR3CfT5bKcNgogK/zCAZFXwBEb/B49PUOD6Wf4WHVBmOySKTTRgpRZRAfH8DgYNk+b2jQFjvGvhnY3ZXojFwoHRDc4wEGBvT3FhbUXVZHobsbKBaFwuMjuM1WCwh953Y78Pwsm1GFeRF8c1PW92i0llSU2YSiAGdnVduxRHpzI5VDoZ9mAmPO9/YMDyTikNsN5HISRCRSSzpEMOfnpkYyCWJiQgsikwGfmzPWphsaxIX7zLnJoVTLhDodn9Px3h4wPQ3094NbreBWKzAwAMzMAAcHZR8v/OrK9FiuoZFvbMi3w4wUCsD6etWcGwPS3S0u5PePDj1Jpcx8mpn/OKWRESK/X9R10VKJcjlR22MxxuLxX0f8L+UPYSMLLo2wfBcAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDYtMTRUMTk6NTQ6NTUrMDA6MDCUeeXAAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA2LTE0VDE5OjU0OjU1KzAwOjAw5SRdfAAAAABJRU5ErkJggg==');
+			
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 2.25rem;
+	padding: 24p;
+	box-sizing: border-box;
+
+	.inputContainer {
+		width: calc(60% - 12px);
+
+		&:last-of-type{
+			width: 40%;
+		}
+
+		label{
+			font-size: 2rem;
+		}
+
+		input{
+			height: 100%;
+			font-size: 1.75rem;
+		}
+	}
+  }
+}
+
